@@ -35,10 +35,12 @@ const fadeImages = [
 ];
 
 const fadeProperties = {
-  duration: 2000,
-  transitionDuration: 1000,
+  duration: 3000,
+  transitionDuration: 5000,
   infinite: true,
   indicators: false,
+  canSwipe: false,
+  arrows: false,
 };
 
 export default function Slideshow() {
@@ -49,7 +51,7 @@ export default function Slideshow() {
           return (
             <div className="each-fade">
               <div className="image-container">
-                <img src={e} />
+                <img src={e} height="40%" width="40%" />
               </div>
             </div>
           );
